@@ -1,0 +1,4 @@
+start on login-session-start
+script
+  start-stop-daemon --start --exec /usr/bin/x11vnc -- -xkb -noxrecord -noxfixes -noxdamage -display :0 <%= @password_opt %> -auth /var/run/lightdm/root/:0 -forever -bg -o /var/log/x11vnc.log
+end script
