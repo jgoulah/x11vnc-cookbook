@@ -18,7 +18,6 @@ end
 
 service "x11vnc" do
   action [:enable, :start]
-  provider Chef::Provider::Service::Upstart
 end
 
 password_opt = ""
