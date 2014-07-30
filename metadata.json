@@ -1,11 +1,12 @@
 {
-  "name": "x11vnc-cookbook",
+  "name": "x11vnc",
   "description": "Installs/Configures x11vnc",
   "long_description": "Description\n===========\n\nInstalls and configures x11vnc\n\nUsage\n=====\n\nFill out the password in attributes/default.rb if you want to protect with a password\n",
   "maintainer": "John Goulah",
   "maintainer_email": "jgoulah@gmail.com",
   "license": "BSD",
   "platforms": {
+    "centos": ">= 0.0.0"
   },
   "dependencies": {
   },
