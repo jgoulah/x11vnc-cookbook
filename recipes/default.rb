@@ -13,6 +13,7 @@ if node["platform_family"] == "rhel"
       :log_file => node[:x11vnc][:log_file],
       :executable_args => node[:x11vnc][:executable_args]
     )
+    notifies(:restart, "service[x11vnc]")
   end
 end
 
@@ -35,5 +36,6 @@ template "/etc/init/x11vnc.conf" do
   variables(
     :password_opt => password_opt
   )
+  notifies(:restart, "service[x11vnc]")
 end
 
