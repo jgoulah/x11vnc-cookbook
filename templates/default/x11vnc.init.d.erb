@@ -9,7 +9,7 @@
 . /etc/rc.d/init.d/functions
 
 exec="/usr/bin/x11vnc"
-args="-bg -display <%= @display %> -o <%= @log_file %> <%= @executable_args %>"
+args="-bg -display <%= @display %> -o <%= @log_file %> <%= @executable_args %> <%= @password_opt %>"
 prog="x11vnc"
 
 [ -e /etc/sysconfig/$prog ] && . /etc/sysconfig/$prog
