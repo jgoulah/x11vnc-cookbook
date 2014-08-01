@@ -29,7 +29,6 @@ when 'rhel'
     notifies(:restart, 'service[x11vnc]')
   end
 else
-
   template '/etc/init/x11vnc.conf' do
     source 'x11vnc.conf.erb'
     mode 00644
