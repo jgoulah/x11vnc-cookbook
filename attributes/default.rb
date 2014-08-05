@@ -1,3 +1,4 @@
-default[:x11vnc] = {
-  :password => ""
+default['x11vnc'] = {
+  :password => ''
 }
+
