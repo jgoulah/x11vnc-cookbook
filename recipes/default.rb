@@ -21,7 +21,7 @@ when 'rhel'
   file_target = '/etc/init.d/x11vnc'
   file_source = 'x11vnc.init.d.erb'
   file_mode =  00755
-  service_provider = Chef::Provider::Service::Init
+  service_provider = Chef::Provider::Service::Init::Redhat
 else
   file_target = '/etc/init/x11vnc.conf'
   file_source = 'x11vnc.conf.erb'
